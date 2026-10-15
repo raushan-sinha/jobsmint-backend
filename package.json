@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/raushan-sinha/jobsmint-backend/issues"
   },
-  "homepage": "https://github.com/raushan-sinha/jobsmint-backend#readme"
+  "homepage": "https://github.com/raushan-sinha/jobsmint-backend#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
 }
