@@ -2,7 +2,7 @@ export async function fetchJobs() {
     const apiUrl = process.env.JOBS_API_URL;
     
     if (!apiUrl) {
-        throw new Error('Jobs API is not found in .env file');
+        throw new Error('Jobs API isn`t finding in .enf file');
     }
 
     const response = await fetch(apiUrl, {
@@ -10,7 +10,7 @@ export async function fetchJobs() {
     })
 
     if (!response.ok) {
-        const error = new Error('API response isn`t working');
+        const error = new Error('API response is not working');
         error.statusCode = 502;
         throw error;
     }
