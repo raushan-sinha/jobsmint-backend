@@ -6,10 +6,10 @@ export async function getJobs(req, res) {
 
         return res.status(200).json({
             success: true,
-            total: jobs.length,
+            totalJobs: jobs.length,
             jobs: jobs
         })
     } catch (error) {
-        console.error(error)
+        console.error('Error', error);
     }
 }
